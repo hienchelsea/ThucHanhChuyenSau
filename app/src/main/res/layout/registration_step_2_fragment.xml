@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="@dimen/dp16"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dang ki tai khoan moi"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="@dimen/dp16" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/dp16"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/tvAvatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="Chon anh dai dien"
+                    android:textColor="@color/colorWhile"
+                    android:textSize="@dimen/dp16" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@drawable/hinh_chu_nhat_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:text="Email dang nhap"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:minLines="0"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:text="Nhap mat khau"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/hinh_chu_nhat_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:text="Nhap lai mat khau"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"/>
+
+                <EditText
+                    android:id="@+id/edtPassword2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack" />
+
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:gravity="center|left"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:text="Nhap lai mat khau"-->
+            <!--android:textSize="@dimen/dp16"-->
+            <!--/>-->
+            <!--<EditText-->
+            <!--android:inputType="textPassword"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#00ffffff"-->
+            <!--android:textSize="@dimen/dp16"-->
+            <!--/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <CheckBox
+                    android:id="@+id/CheckBox"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ban dong y voi cac quy dinh nguoi dung" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/hinh_chu_nhat_xanh"
+            android:text="Dang ky"
+            android:textColor="@color/colorWhile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp16"></LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

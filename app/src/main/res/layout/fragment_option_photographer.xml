@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:src="@drawable/back_icon"
+            android:padding="16dp"
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            />
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="Dich vụ"
+            android:gravity="center"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+
+
+            />
+        <ImageView
+            android:padding="16dp"
+            android:id="@+id/imgSearch"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcOption"
+        android:layout_below="@id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

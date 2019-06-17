@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhile"
+    >
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cam on quy khach da su dung dich vu"
+        android:textSize="@dimen/dp16"
+        android:textColor="@color/colorBlack"
+        />
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui long cho xac nhan tu photographer"
+        android:textSize="@dimen/dp16"
+        android:textColor="@color/colorBlack"
+        />
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/hinh_chu_nhat_xanh"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:text="OK"
+        android:textColor="@color/colorWhile"
+        />
+
+</LinearLayout>

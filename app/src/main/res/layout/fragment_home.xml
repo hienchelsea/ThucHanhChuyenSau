@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/colorWhile"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhileDark"
+                android:orientation="vertical"
+                >
+                <!--<LinearLayout-->
+                    <!--android:visibility="visible"-->
+                    <!--android:id="@+id/llSearchEdit"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<LinearLayout-->
+                        <!--android:background="@drawable/hinh_chu_nhat_one"-->
+                        <!--android:layout_marginLeft="@dimen/dp16"-->
+                        <!--android:layout_marginRight="@dimen/dp16"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<EditText-->
+                            <!--android:id="@+id/edtName"-->
+                            <!--android:paddingLeft="@dimen/dp16"-->
+                            <!--android:paddingRight="@dimen/dp16"-->
+                            <!--android:hint="Ten photographer can tim"-->
+                            <!--android:layout_marginLeft="@dimen/dp16"-->
+                            <!--android:layout_marginRight="@dimen/dp16"-->
+                            <!--android:background="@drawable/hinh_chu_nhat_one"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="40dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textSize="@dimen/dp16"-->
+                            <!--android:inputType="textEmailAddress"-->
+                            <!--/>-->
+                        <!--<ImageView-->
+                            <!--android:id="@+id/imvSearchEdit"-->
+                            <!--android:background="@color/colorPrimaryDark"-->
+                            <!--android:layout_marginRight="@dimen/dp16"-->
+                            <!--android:layout_width="40dp"-->
+                            <!--android:layout_height="40dp" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:visibility="visible"-->
+                        <!--android:id="@+id/llSearchInformation"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/llTime"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginLeft="@dimen/dp16"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginRight="@dimen/dp16"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:background="@drawable/hinh_chu_nhat_one"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="40dp">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="40dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:background="@color/colorPrimaryDark"&ndash;&gt;-->
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/tvTime"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text="Thoi gian"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:gravity="center|left"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:paddingLeft="@dimen/dp16"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textColor="@color/colorBlack"&ndash;&gt;-->
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+                        <!--<LinearLayout-->
+                            <!--android:id="@+id/llDate"-->
+                            <!--android:layout_marginLeft="@dimen/dp16"-->
+                            <!--android:layout_marginRight="@dimen/dp16"-->
+                            <!--android:layout_marginTop="8dp"-->
+                            <!--android:background="@drawable/hinh_chu_nhat_one"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp">-->
+                            <!--<ImageView-->
+                                <!--android:layout_width="40dp"-->
+                                <!--android:layout_height="40dp"-->
+                                <!--android:background="@color/colorPrimaryDark"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/tvDate"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Ngay"-->
+                                <!--android:gravity="center|left"-->
+                                <!--android:paddingLeft="@dimen/dp16"-->
+                                <!--android:textColor="@color/colorBlack"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:id="@+id/llCoupons"-->
+                            <!--android:layout_marginLeft="@dimen/dp16"-->
+                            <!--android:layout_marginRight="@dimen/dp16"-->
+                            <!--android:layout_marginTop="8dp"-->
+                            <!--android:background="@drawable/hinh_chu_nhat_one"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="40dp">-->
+                            <!--<ImageView-->
+                                <!--android:layout_width="40dp"-->
+                                <!--android:layout_height="40dp"-->
+                                <!--android:background="@color/colorPrimaryDark"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/tvCoupons"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:text="Dich vu"-->
+                                <!--android:gravity="center|left"-->
+                                <!--android:paddingLeft="@dimen/dp16"-->
+                                <!--android:textColor="@color/colorBlack"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/llCount"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginLeft="@dimen/dp16"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginRight="@dimen/dp16"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:background="@drawable/hinh_chu_nhat_one"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="40dp">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="40dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:background="@color/colorPrimaryDark"&ndash;&gt;-->
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/tvCount"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:text="So nguoi"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:gravity="center|left"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:paddingLeft="@dimen/dp16"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textColor="@color/colorBlack"&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+                <LinearLayout
+                    android:id="@+id/llSearch"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/hinh_chu_nhat_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Tim kiem"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dp16"
+                            android:textColor="@color/colorBlack"
+                            />
+                        <ImageView
+                            android:padding="8dp"
+                            android:id="@+id/imvSearch"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_search"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Photographer noi bat"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/dp16"
+                    android:textColor="@color/colorBlack"
+                    />
+                    <android.support.v7.widget.RecyclerView
+                        android:padding="4dp"
+                        android:id="@+id/rcPhotographer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhileDark"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

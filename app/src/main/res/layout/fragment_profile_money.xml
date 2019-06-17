@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhile"
+    android:clickable="true"
+    android:focusable="true"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:src="@drawable/icon_back"
+            android:padding="16dp"
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            />
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="Profile"
+            android:gravity="center"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+
+
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp16"
+
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="VND Viet Nam" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="VND Viet Nam" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="VND Viet Nam" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="VND Viet Nam" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="VND Viet Nam" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="VND Viet Nam" />
+
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:text="Luu"
+        android:textColor="@color/colorWhile"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+</LinearLayout>

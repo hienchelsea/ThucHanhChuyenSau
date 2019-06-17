@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhileDark"
+    >
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            android:padding="16dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hien oc"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+            android:visibility="visible"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp16"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp16"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Chup anh nghe thuat"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/dp16"
+                android:textStyle="bold"
+
+                />
+            <ImageView
+                android:id="@+id/imvMenu"
+                android:padding="@dimen/dp20"
+                android:layout_width="56dp"
+                android:layout_height="56dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="The loai"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:padding="@dimen/dp16"
+                android:id="@+id/tvType"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Chup ky yeu"
+                android:gravity="center|left"
+                android:background="@color/colorWhile"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="So luong anh chup"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:padding="@dimen/dp16"
+                android:id="@+id/tvShots"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhile"
+                android:text="Chup ky yeu"
+                android:gravity="center|left"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="So luong anh  in"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:padding="@dimen/dp16"
+                android:id="@+id/tvPrints"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Chup ky yeu"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:background="@color/colorWhile"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mô tả"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:padding="@dimen/dp16"
+                android:id="@+id/tvDescription"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Chup ky yeu"
+                android:gravity="center|left"
+                android:background="@color/colorWhile"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gia"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:padding="@dimen/dp16"
+                android:id="@+id/tvPrice"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="40k/1gio, 400k/ngay"
+                android:gravity="center|left"
+                android:textColor="@color/colorRed"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnOder"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Dat Ngay"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhile"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

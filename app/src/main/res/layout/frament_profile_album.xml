@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:src="@drawable/back_icon"
+            android:padding="16dp"
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            />
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="Album"
+            android:gravity="center"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+
+
+            />
+        <ImageView
+            android:src="@drawable/icon_image"
+            android:padding="10dp"
+            android:id="@+id/imvAddAlbum"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcAlbumUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ImvIMG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

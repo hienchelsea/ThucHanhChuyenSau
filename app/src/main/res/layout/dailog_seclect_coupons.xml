@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhileDark"
+    android:padding="@dimen/dp16"
+    android:layout_margin="@dimen/dp16"
+    android:orientation="vertical"
+    >
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <EditText
+           android:id="@+id/edtCoupons"
+           android:hint="Nhap ten dich vu can tim"
+           android:layout_width="match_parent"
+           android:layout_height="56dp" />
+       <RadioButton
+           android:id="@+id/rbtnCoupons"
+           android:visibility="gone"
+           android:background="@drawable/hinh_chu_nhat_one"
+           android:layout_width="match_parent"
+           android:layout_height="46dp" />
+       <TextView
+           android:gravity="center|right"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Goi y cho ban"
+           />
+   </LinearLayout>
+   
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbtnKyYeu"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/hinh_chu_nhat_one"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Chup anh ky yeu"
+            />
+        <RadioButton
+            android:id="@+id/rbtnDaNgoai"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/hinh_chu_nhat_one"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Chup anh da ngoai"
+            />
+        <RadioButton
+            android:id="@+id/rbtnConcept"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/hinh_chu_nhat_one"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Chup anh concept"
+            />
+        <RadioButton
+            android:id="@+id/rbtnChanDung"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/hinh_chu_nhat_one"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Chup anh chan dung"
+            />
+    </RadioGroup>
+
+</LinearLayout>

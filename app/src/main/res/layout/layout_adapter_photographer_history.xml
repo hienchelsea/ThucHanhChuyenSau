@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llHomeAdapter"
+    android:clickable="true"
+    android:focusable="true"
+
+    >
+
+    <LinearLayout
+        android:background="@drawable/hinh_chu_nhat_one"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp16"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    ></LinearLayout>
+                <TextView
+                    android:id="@+id/tvPhotographer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do Xuan Hien"
+                    android:textSize="@dimen/dp18"
+                    android:textColor="@color/colorBlack"
+
+                    />
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Ngay book: "
+                        android:textSize="@dimen/dp14"
+                        android:textColor="@color/colorBlack"
+
+                        />
+                    <TextView
+                        android:id="@+id/tvTimeBook"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text=" 22/01/1997"
+                        android:textSize="@dimen/dp14"
+                        android:textColor="@color/colorBlack"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Dia diem: "
+                        android:textSize="@dimen/dp14"
+                        android:textColor="@color/colorBlack"
+
+                        />
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text=" Hoc vien cong nghe buu chinh vien thonh"
+                        android:textSize="@dimen/dp14"
+                        android:textColor="@color/colorBlack"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Gia: "
+                        android:textSize="@dimen/dp14"
+                        android:textColor="@color/colorBlack"
+
+                        />
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="2000000"
+                        android:textColor="@color/colorRed"
+                        android:id="@+id/tvTotal"
+                        />
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text=" VND"
+                        android:textSize="@dimen/dp14"
+                        android:textColor="@color/colorBlack"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ma: "
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"
+
+                    />
+                <TextView
+                    android:id="@+id/tvIdOder"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="abchdr"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:gravity="center"
+                    android:text="So luong: "
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"
+
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:id="@+id/tvCount"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    ></LinearLayout>
+
+                <Button
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/hinh_chu_nhat_xanh"
+                    android:text="Xem danh gia"
+                    android:textColor="@color/colorWhile"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark"
+        ></LinearLayout>
+
+
+</LinearLayout>

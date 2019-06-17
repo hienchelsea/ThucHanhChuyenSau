@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp16"
+    android:background="@color/colorWhile"
+    android:layout_margin="4dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Bạn có muốn hủy dịch vụ này"
+            android:textSize="@dimen/dp16"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/hinh_chu_nhat_xanh"
+            android:text="Đồng ý"
+            android:textColor="@color/colorWhile"
+            />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/hinh_chu_nhat_cam"
+            android:text="Hủy"
+            android:textColor="@color/colorWhile"
+            />
+    </LinearLayout>
+
+</LinearLayout>

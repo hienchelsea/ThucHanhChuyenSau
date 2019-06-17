@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="INNO PHOTO"
+            android:gravity="center"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+            />
+        <ImageView
+            android:src="@drawable/icon_menu"
+            android:padding="16dp"
+            android:id="@+id/imgMenu"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/llToolbar"
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation">
+
+        <fragment
+            android:name="com.example.cachua.photographerapp.View.Fragment.Photographer.Schedule.SchedulePhotographerFragment"
+            android:id="@+id/frHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/shedule_photographer_fragment"
+
+            />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#e6e4e4"
+        app:menu="@menu/navigation_photographer"
+        app:labelVisibilityMode="labeled"
+        />
+
+</RelativeLayout>

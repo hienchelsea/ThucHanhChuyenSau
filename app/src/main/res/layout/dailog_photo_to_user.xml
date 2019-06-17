@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorWhile"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    >
+
+    <TextView
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Ban co muon quay tro lai nguoi dung?"
+        android:textSize="@dimen/dp16"
+        android:gravity="center|left"
+        android:textColor="@color/colorBlack"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+        <Button
+            android:id="@+id/btnOk"
+            android:background="@drawable/hinh_chu_nhat_cam"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="co"
+            android:textColor="@color/colorWhile"
+            />
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/hinh_chu_nhat_xanh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Khong"
+            android:textColor="@color/colorWhile"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuIntroduce"
+        android:title="Gioi thieu"
+        />
+    <item
+        android:id="@+id/menuKindMoney"
+        android:title="Loai Tien" />
+    <item
+        android:id="@+id/menuUserToPhotographer"
+        android:title="Tro ve nguoi dung" />
+    <item
+        android:id="@+id/menuLogOut"
+        android:title="Dang xuat" />
+
+</menu>

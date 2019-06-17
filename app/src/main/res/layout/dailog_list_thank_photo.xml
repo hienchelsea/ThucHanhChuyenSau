@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp16"
+    android:background="@color/colorWhile"
+    android:layout_margin="4dp"
+    >
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Cam ơn bạn đã sử dụng dịch vụ của chúng tôi"
+            android:textSize="@dimen/dp14"
+            android:textColor="@color/colorBlack"
+            />
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/hinh_chu_nhat_xanh"
+            android:text="Ok"
+            android:textColor="@color/colorWhile"
+            />
+    </LinearLayout>
+
+</LinearLayout>

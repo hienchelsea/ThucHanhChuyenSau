@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:src="@drawable/icon_back"
+            android:padding="16dp"
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            />
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="Tim kiem"
+            android:gravity="center"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+
+
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llBetween"
+        android:layout_below="@id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhileDark"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/llSearchEdit"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/hinh_chu_nhat_one"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtName"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingRight="@dimen/dp16"
+                    android:hint="Ten photographer can tim"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:background="@drawable/hinh_chu_nhat_one"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dp16"
+                    android:inputType="textEmailAddress"
+                    />
+                <ImageView
+                    android:id="@+id/imvSearchEdit"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/llSearchInformation"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llTime"-->
+                <!--android:layout_marginLeft="@dimen/dp16"-->
+                <!--android:layout_marginRight="@dimen/dp16"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:background="@drawable/hinh_chu_nhat_one"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp">-->
+                <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/colorPrimaryDark"-->
+                <!--/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/tvTime"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="Thoi gian"-->
+                <!--android:gravity="center|left"-->
+                <!--android:paddingLeft="@dimen/dp16"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/llDate"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/hinh_chu_nhat_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimaryDark"
+                        />
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ngay"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp16"
+                        android:textColor="@color/colorBlack"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCoupons"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/hinh_chu_nhat_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimaryDark"
+                        />
+                    <TextView
+                        android:id="@+id/tvCoupons"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Dich vu"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp16"
+                        android:textColor="@color/colorBlack"
+                        />
+                </LinearLayout>
+                <!--<LinearLayout-->
+                <!--android:id="@+id/llCount"-->
+                <!--android:layout_marginLeft="@dimen/dp16"-->
+                <!--android:layout_marginRight="@dimen/dp16"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:background="@drawable/hinh_chu_nhat_one"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp">-->
+                <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/colorPrimaryDark"-->
+                <!--/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/tvCount"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="So nguoi"-->
+                <!--android:gravity="center|left"-->
+                <!--android:paddingLeft="@dimen/dp16"-->
+                <!--android:textColor="@color/colorBlack"-->
+
+                <!--/>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/hinh_chu_nhat_one"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tim kiem"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/dp16"
+                    android:textColor="@color/colorBlack"
+                    />
+                <ImageView
+                    android:id="@+id/imvSearch"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/llBetween"
+        android:id="@+id/rcSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhileDark"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

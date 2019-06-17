@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhile"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            android:padding="16dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+            android:visibility="visible"
+
+
+            />
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="-16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="105dp">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--&gt;-->
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:padding="@dimen/dp16"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@color/colorPrimaryDark"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:text="Buoc 1"-->
+                        <!--android:textColor="@color/colorWhile"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:gravity="center|bottom"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="103dp"-->
+                        <!--android:text="Cap nhap anh"-->
+
+                        <!--/>-->
+
+
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--&gt;-->
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:padding="@dimen/dp30"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@color/colorPrimaryDark"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:text="Buoc 2"-->
+                        <!--android:textColor="@color/colorWhile"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--&gt;-->
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:padding="@dimen/dp30"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@color/colorPrimaryDark"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:text="Buoc 3"-->
+                        <!--android:textColor="@color/colorWhile"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yeu cau cap nhap anh dai dien"
+                    android:textSize="@dimen/dp14"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cimgAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:src="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dp14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Them anh noi bat" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorWhileDark">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhileDark"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp16"
+                        android:text="Ten album"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dp14"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtNameAlbum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp16"
+                        android:text="Noi bat"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dp14"
+                        android:background="#00ffffff"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorWhileDark">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhileDark"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp16"
+                        android:text="Them anh:"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dp14"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imvAddImv"
+                        android:layout_width="56dp"
+                        android:layout_height="46dp"
+                        android:background="@color/colorPrimaryDark"
+                    />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="@dimen/dp16"
+                    android:id="@+id/rcImv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gioi thieu ban than"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dp14" />
+
+                <EditText
+                    android:paddingLeft="@dimen/dp16"
+                    android:textSize="@dimen/dp14"
+                    android:background="@color/colorWhileDark"
+                    android:id="@+id/edtIntroduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/edtTag"
+                    android:textSize="@dimen/dp14"
+                    android:background="@color/colorWhileDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dp16" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp16"
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/hinh_chu_nhat_xanh"
+                android:text="Buoc 2"
+                android:textColor="@color/colorWhile"
+
+
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

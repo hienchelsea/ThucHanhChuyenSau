@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/navigation_Home"
+        android:icon="@drawable/home"
+        android:title="Trang chu" />
+    <item
+        android:id="@+id/navigation_Profile"
+        android:icon="@drawable/icon_user"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_Notice"
+        android:icon="@drawable/notifications"
+        android:title="Notice" />
+    <item
+        android:id="@+id/navigation_Messenage"
+        android:icon="@drawable/icon_messenger"
+        android:title="Photographer" />
+
+
+</menu>

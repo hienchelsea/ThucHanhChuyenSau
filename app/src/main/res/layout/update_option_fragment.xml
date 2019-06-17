@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhileDark"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/icon_back"
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/img_width_width"
+            android:layout_height="@dimen/img_width_width"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thay đổi dịch vụ"
+            android:textColor="@color/colorWhile"
+            android:textSize="@dimen/dp18"
+            android:visibility="visible"
+
+
+            />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="@dimen/dp16"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tên dịch vụ"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+                    <EditText
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:id="@+id/edtName"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/dp16"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/dp16"
+                        android:background="@drawable/hinh_chu_nhat_trang"
+                        android:inputType="textEmailAddress"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="Thể loại"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_weight="1"
+                    android:background="@drawable/hinh_chu_nhat_trang"
+                    android:gravity="center|left"
+                    android:padding="@dimen/dp16"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/dp16"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="Số lượng ảnh chụp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtShots"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_weight="1"
+                    android:background="@drawable/hinh_chu_nhat_trang"
+                    android:gravity="center|left"
+                    android:padding="@dimen/dp16"
+                    android:inputType="number"
+                    android:textSize="@dimen/dp16"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="Số lượng ảnh in"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/edtPrints"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_weight="1"
+                    android:background="@drawable/hinh_chu_nhat_trang"
+                    android:gravity="center|left"
+                    android:padding="@dimen/dp16"
+                    android:inputType="number"
+                    android:textSize="@dimen/dp16"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:text="Giá"
+                    android:textColor="@color/colorPrimaryDark" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:text="Giá theo giờ"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+                    <EditText
+                        android:id="@+id/edtPriceDay"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/hinh_chu_nhat_trang"
+                        android:inputType="number"
+                        android:textSize="@dimen/dp16"
+                        />
+                    <TextView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:text="VND"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:text="Giá theo ngày"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+                    <EditText
+                        android:id="@+id/edtPriceHour"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/hinh_chu_nhat_trang"
+                        android:inputType="number"
+                        android:textSize="@dimen/dp16"
+                        />
+                    <TextView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:text="VND"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:text="Ghi chú"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <EditText
+                    android:id="@+id/edtNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="3"
+                    android:background="@drawable/hinh_chu_nhat_trang"
+                    android:textSize="@dimen/dp16"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp16"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:background="@drawable/hinh_chu_nhat_trang"
+                android:text="Thay đổi"
+                android:id="@+id/btnAdd"
+                android:textColor="@color/colorWhile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+</LinearLayout>

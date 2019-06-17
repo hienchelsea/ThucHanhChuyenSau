@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/navigation_Schedule"
+        android:icon="@drawable/icon_schedule"
+        android:title="Lich trinh" />
+    <item
+            android:id="@+id/navigation_List"
+        android:icon="@drawable/icon_listing_option"
+        android:title="Danh sach dat" />
+
+    <item
+        android:id="@+id/navigation_Messenger"
+        android:icon="@drawable/icon_messenger"
+        android:title="Tin nhan" />
+
+    <item
+        android:id="@+id/navigation_Notice"
+        android:icon="@drawable/notifications"
+        android:title="Thong bao" />
+    <item
+        android:id="@+id/navigation_Profile"
+        android:icon="@drawable/icon_user"
+        android:title="Ca nhan" />
+
+
+</menu>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PhotographerApp</string>
+    <string name="title_activity_photographer">PhotographerActivity</string>
+</resources>

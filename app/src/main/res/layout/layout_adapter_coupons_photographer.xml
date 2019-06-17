@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/hinh_chu_nhat_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Ten dich vu khuyen mai"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dp14"/>
+
+            <ImageView
+                android:id="@+id/imvMenu"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="@dimen/dp20"
+                android:src="@drawable/icon_dot_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/hinh_chu_nhat_trang"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@color/colorPrimary"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:gravity="center|left"
+            android:text="Khuyen mai"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_weight="1"
+            android:background="@drawable/hinh_chu_nhat_trang"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp16"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:gravity="center|left"
+            android:text="Ma code"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_weight="1"
+            android:background="@drawable/hinh_chu_nhat_trang"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp16"
+            android:text="20%"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center|left"
+            android:text="Chi tiet khuyen mai"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hinh_chu_nhat_trang"
+            android:gravity="center|left"
+            android:minLines="3"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center|left"
+            android:text="Thoi gian ap dung:"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/hinh_chu_nhat_two"
+                    android:gravity="center"
+                    android:text="22/01/1997"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dp14"/>
+
+                <ImageView
+                    android:padding="@dimen/dp16"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/icon_calendar_two"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/hinh_chu_nhat_two"
+                    android:gravity="center"
+                    android:text="22/01/1997"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dp14"/>
+
+                <ImageView
+                    android:padding="@dimen/dp16"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/icon_calendar_two"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Tinh trang khuyen mai"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dp14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp16"
+                android:gravity="center"
+                android:text="Ket thuc"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dp14"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryDark"
+
+        ></LinearLayout>
+
+
+</LinearLayout>
